@@ -15,9 +15,9 @@ comments: true
       <time datetime="2015-10-13">
         <i class="fa fa-calendar-o"></i> <time datetime="{{ page.date | date:"%Y-%m-%d" }}"> {{ page.date | date:"%Y-%m-%d" }}
       </time>
-      <span>
+      <!-- <span>
         <i class="fa fa-comments"></i> <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}">Leave a comment</a>
-      </span>
+      </span> -->
       <span>
         {% assign post = page %}
         {% if post.categories.size > 0 %}

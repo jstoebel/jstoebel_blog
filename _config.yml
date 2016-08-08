@@ -2,7 +2,7 @@ permalink   : /:title/
 markdown    : rdiscount
 highlighter : pygments
 
-paginate: 2 #6
+paginate: 6
 comments: true
 paginate_path: "/page/:num"
 
@@ -23,8 +23,8 @@ name: Jacob Stoebel
 title: Jacob Stoebel | Software Developer
 description: "Software developer and xkcd forwarder. Python, Ruby, JavaScript etc."
 meta_description: "Software developer and xkcd forwarder. Python, Ruby, JavaScript etc."
-meta_keywords: "site, website, softwware, software developer, python, djangp, ruby, ruby on rails, javascript, frontend, front-end, html5, css3, jquery, react, "
-url: http://www.jstoebel.com
+meta_keywords: "site, website, softwware, software developer, python, djangp, ruby, ruby on rails, javascript, frontend, front-end, html5, css3, jquery, react"
+
 production_url: http://www.jstoebel.com
 repo: https://github.com/jstoebel/jstoebel.github.com
 # disqus_shortname: "nandothemes"
@@ -32,7 +32,7 @@ rss_path: source/
 author:
   name      : Jacob Stoebel
   image     : /assets/images/author.jpg
-  email     : jstoebel@gmail.co
+  email     : jstoebel@gmail.com
   url       : http://www.jstoebel.com
   twitter   : http://twitter.com/jstoebel
   github    : http://github.com/jstoebel
