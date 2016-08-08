@@ -1,6 +1,6 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 group :development do
   gem 'rake', '~> 10.4.2'
@@ -9,3 +9,5 @@ group :development do
   gem 'jekyll', '~> 2.5.3'
   gem 'jekyll-assets'
 end
+
+gem 'rdiscount'

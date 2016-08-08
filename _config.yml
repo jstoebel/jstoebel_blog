@@ -1,5 +1,5 @@
 permalink   : /:title/
-markdown    : kramdown
+markdown    : rdiscount
 highlighter : pygments
 
 paginate: 2 #6
@@ -7,37 +7,37 @@ comments: true
 paginate_path: "/page/:num"
 
 baseurl: "" # change to empty string ""
-domain_name: nandomoreira.me
+domain_name: jstoebel.com
 google_analytics: UA-52446115-1
 
 source:      source
 destination: _site
 
+sass:
+  sass_dir: source/assets/_sass
 # cover: /assets/images/header-cover.png
 
 # site title, description, meta_description, meta_keywords
 # Details for the RSS feed generator
-name: Fernando Moreira
-title: Fernando Moreira | Desenvolvimento Web e tudo mais..
-description: "Desenvolvedor Front-end/Wordpress, Design Responsivo, HTML5, CSS3 e JavaScript"
-meta_description: "Desenvolvedor Front-end/Wordpress, Design Responsivo, HTML5, CSS3 e JavaScript"
-meta_keywords: "site, website, loja virtual, lojas virtuais, e-commerce, wordpress, frontend, front-end, html5, css3, javascript, jquery, seo, otimizacao, performance"
-url: http://nandomoreira.me
-production_url: http://nandomoreira.me
-repo: https://github.com/nandomoreirame/nandomoreira-jekyll-theme
-disqus_shortname: "nandothemes"
+name: Jacob Stoebel
+title: Jacob Stoebel | Software Developer
+description: "Software developer and xkcd forwarder. Python, Ruby, JavaScript etc."
+meta_description: "Software developer and xkcd forwarder. Python, Ruby, JavaScript etc."
+meta_keywords: "site, website, softwware, software developer, python, djangp, ruby, ruby on rails, javascript, frontend, front-end, html5, css3, jquery, react, "
+url: http://www.jstoebel.com
+production_url: http://www.jstoebel.com
+repo: https://github.com/jstoebel/jstoebel.github.com
+# disqus_shortname: "nandothemes"
 rss_path: source/
 author:
-  name      : Fernando Moreira
+  name      : Jacob Stoebel
   image     : /assets/images/author.jpg
-  email     : nandomoreira.me@gmail.com
-  url       : http://nandomoreira.me
-  facebook  : http://facebook.com/fernando.dev
-  twitter   : http://twitter.com/nandomoreirame
-  instagram : http://instagram.com/nandomoreira.me
-  github    : http://github.com/nandomoreirame
-  linkedin  : http://linkedin.com/in/nandomoreirame
-  bio       : "Desenvolvedor Front-end/Wordpress entusiasta de performance, design responsivo e usabilidade, sempre em busca do melhor projeto e de um bom café."
+  email     : jstoebel@gmail.co
+  url       : http://www.jstoebel.com
+  twitter   : http://twitter.com/jstoebel
+  github    : http://github.com/jstoebel
+  linkedin  : https://www.linkedin.com/in/jacob-stoebel-71705223?trk=nav_responsive_tab_profile
+  bio       : "I am a software developer living in Berea, KY. I spend my days writing web applications (Ruby, Python, JavaScript), working with data, and leveling up as a software engineer. I work and study at Berea College. This is my blog."
 
 # thought
 thought:
