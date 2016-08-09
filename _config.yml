@@ -26,7 +26,7 @@ meta_description: "Software developer and xkcd forwarder. Python, Ruby, JavaScri
 meta_keywords: "site, website, softwware, software developer, python, djangp, ruby, ruby on rails, javascript, frontend, front-end, html5, css3, jquery, react"
 
 production_url: http://www.jstoebel.com
-repo: https://github.com/jstoebel/jstoebel.github.com
+repo: https://github.com/jstoebel/jstoebel.github.io
 # disqus_shortname: "nandothemes"
 rss_path: source/
 author:
