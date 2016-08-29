@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Why I switched my blog to Jerkyll"
-permalink: why-i-switched-my-blog-to-jerkyll
+title: "Why I switched my blog to Jekyll"
+permalink: why-i-switched-my-blog-to-jekyll
 date: 2016-08-10 08:32:02
 comments: true
 description: "Why I switched my blog to Jekyll"

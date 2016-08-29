@@ -8,6 +8,8 @@ require "jekyll"
 GITHUB_REPONAME = "jstoebel/jstoebel.github.io"
 GITHUB_REPO_BRANCH = "master"
 
+DESTINATION_REPO = "/Users/stoebelj/Dropbox/jstoebel.github.io"
+
 SOURCE = "source/"
 DEST   = "_site"
 CONFIG = {
@@ -31,22 +33,43 @@ end
 
 desc "Generate and publish blog to gh-pages"
 task :publish => [:generate] do
-  Dir.mktmpdir do |tmp|
-    cp_r "_site/.", tmp
+  # assume the deployed site is already cloned and lives elsewhere on this
+  # machine, location defined in config under destination_repo
 
-    pwd = Dir.pwd
-    Dir.chdir tmp
-
-    system "git init"
-    system "git checkout --orphan #{GITHUB_REPO_BRANCH}"
-    system "git add ."
-    message = "Site updated at #{Time.now.utc}"
-    system "git commit -am #{message.inspect}"
-    system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-    system "git push origin #{GITHUB_REPO_BRANCH} --force"
-
-    Dir.chdir pwd
+  contents = Dir["_site/*"]
+  contents.each do |item|
+    # move the built site over.
+    cp_r item, DESTINATION_REPO
   end
+
+  pwd = Dir.pwd  # remember this directory
+
+  Dir.chdir DESTINATION_REPO
+  system "git add ."
+  message = "Site updated at #{Time.now.utc}"
+  system "git commit -am #{message.inspect}"
+  system "git checkout master"
+  system "git push origin mater"
+
+  Dir.chdir pwd
+
+
+  # Dir.mktmpdir do |tmp|
+  #   cp_r "_site/.", tmp
+  #
+  #   pwd = Dir.pwd
+  #   Dir.chdir tmp
+  #
+  #   system "git init"
+  #   system "git checkout --orphan #{GITHUB_REPO_BRANCH}"
+  #   system "git add ."
+  #   message = "Site updated at #{Time.now.utc}"
+  #   system "git commit -am #{message.inspect}"
+  #   system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
+  #   system "git push origin #{GITHUB_REPO_BRANCH} --force"
+  #
+  #   Dir.chdir pwd
+  # end
 end
 
 desc "Begin a new post in #{CONFIG['posts']}"

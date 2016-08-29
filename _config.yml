@@ -12,6 +12,7 @@ google_analytics: UA-52446115-1
 
 source:      source
 destination: _site
+destination_repo: ~/Dropbox/jstoebel.github.io
 
 sass:
   sass_dir: source/assets/_sass

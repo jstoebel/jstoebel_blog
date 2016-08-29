@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Learning Concurrency in JavaScript
+title: Learning Async in JavaScript
 date: '2016-06-01T12:30:17+00:00'
-permalink: learning-concurrency-in-javascript
+permalink: learning-async-in-javascript
 ---
-Recently, I completed Freecodecamp's [Front End Development Program](https://www.freecodecamp.com/jstoebel). The cirriculum is in Javascript meaning that callbacks, concurrency and promises were on the menu for me to wrestle with. There were plently of great resources out there to help new developers with these challenges, but as part of my learning, I thought it would be useful to summarize some of the lessons I learned. At the very least, this will help solidify my learning. And it might even be a useful quick resource to others as they walk the same path I do.
+Recently, I completed Freecodecamp's [Front End Development Program](https://www.freecodecamp.com/jstoebel). The curriculum is in Javascript meaning that callbacks and promises were on the menu for me to wrestle with. There were plenty of great resources out there to help new developers with these challenges, but as part of my learning, I thought it would be useful to summarize some of the lessons I learned. At the very least, this will help solidify my learning. And it might even be a useful quick resource to others as they walk the same path I do.
 
-## Concurrency
+## Async
 
-Coming from Python, concurrency was a tricky topic to get my head around. Here's the basic idea: Let's say you execute a command that doesn't finish instantly. You might be setting a timer, or executing an AJAX request. Typically, a callback is given to that command; something that should be done once that command is finished. So for example you might have:
+Coming from Python, asynchronous operations was a tricky topic to get my head around. Here's the basic idea: Let's say you execute a command that doesn't finish instantly. You might be setting a timer, or executing an AJAX request. Typically, a callback is given to that command; something that should be done once that command is finished. So for example you might have:
 
     Do a thing
     Do another thing
@@ -17,16 +17,16 @@ Coming from Python, concurrency was a tricky topic to get my head around. Here's
     Do a final thing.
 
 
-A beginner coming from Python would be forgiven for thinking that the line `do a final thing` would run last right? Not quite. The confusing, but ultimately great thing about concurrency is that JavaScript doesn't just wait around for a a timer to end. There's other work to be done! Once the timer has been set `Do a final thing` runs right away, then there is a pause and then the timer's callback is called. Think about it this way: if you were cleaning your house, when you put some laundry in the washing machine, you wouldn't just sit there while the cycle runs waiting for it to finish. You would probably go work on something else for a while. When the cycle finishes the "callback" runs, which means you take the clothes out of the machine and hang them up to dry. As a more real world example, I was working on a clone of the game [Simon](https://www.freecodecamp.com/jstoebel). The game needs to playback a series of flashes to the user, but there needs to be a gap of time in between the flashes to allow for the users brain to process the information. This means that we need to set two timers. One to trigger the end of a flash and another to trigger the beginning of the next (with a gap of time in the middle). We might be tempted to write psudocode like this:
+A beginner coming from Python would be forgiven for thinking that the line `do a final thing` would run last right? Not quite. The confusing, but ultimately great thing is that JavaScript doesn't just wait around for a a timer to end. There's other work to be done! Once the timer has been set `Do a final thing` runs right away, then there is a pause and then the timer's callback is called. Think about it this way: if you were cleaning your house, when you put some laundry in the washing machine, you wouldn't just sit there while the cycle runs waiting for it to finish. You would probably go work on something else for a while. When the cycle finishes the "callback" runs, which means you take the clothes out of the machine and hang them up to dry. As a more real world example, I was working on a clone of the game [Simon](https://www.freecodecamp.com/jstoebel). The game needs to playback a series of flashes to the user, but there needs to be a gap of time in between the flashes to allow for the user's brain to process the information. This means that we need to set two timers. One to trigger the end of a flash and another to trigger the beginning of the next (with a gap of time in the middle). We might be tempted to write psudocode like this:
 
     loop over each move:
         turn on button
         set a timer for 500 ms:
             when its done, turn off the button
             set a timer for 200 ms:
-                when its down flash the next button
+                when its done flash the next button
 
-I knew I had an issue with concurrency when this code didn't work as I expected. Again, once Javascript sets a timer it does not wait for it to finish. It keeps going with the next line of code, which in this case means the next iteration of the for loop. This isn't what we want.
+I knew I had an issue with async when this code didn't work as I expected. Again, once Javascript sets a timer it does not wait for it to finish. It keeps going with the next line of code, which in this case means the next iteration of the for loop. This isn't what we want.
 
 ###Use a generator!
 
