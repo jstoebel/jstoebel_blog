@@ -16,7 +16,7 @@ Earlier this year I launched my personal site running on Django and the Mezzanin
 
 # Lightweight
 
-Jekyll doesn't have you worrying about nonsense like web server configuration or databases. And why should it? I'm just trying to push static content out to the web. I simply write my post as a markdown file (<3), push to Github and I'm done. Anything more complex amounts to more needless headache. With my old site I also had to worry about backup and security. With Github pages, backup is a simple matter of backing up my hard drive (which I do anyway). As far a security, there are no application account passwords to fuss over or SSL certificate to set up. I publish my work to my Github repo using my RSA key like normal and that's it. Visitors view my site with plain old http, but since I'm not asking them to submit any data, is that really a problem?
+Jekyll doesn't have you worrying about nonsense like web server configuration or databases. And why should it? I'm just trying to push static content out to the web. I simply write my post as a markdown file (<3), push to Github and I'm done. Anything more complex amounts to more needless headache. With my old site I also had to worry about backup and security. With Github pages, backup is a simple matter of backing up my hard drive (which I do anyway). As far as security, there are no application account passwords to fuss over or SSL certificate to set up. I publish my work to my Github repo using my RSA key like normal and that's it. Visitors view my site with plain old http, but since I'm not asking them to submit any data, is that really a problem?
 
 # Common sense conventions...
 
