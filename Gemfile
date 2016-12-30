@@ -11,3 +11,4 @@ group :development do
 end
 
 gem 'rdiscount'
+gem 'rouge', '~> 1.10', '>= 1.10.1'
