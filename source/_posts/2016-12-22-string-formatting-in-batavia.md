@@ -60,19 +60,4 @@ As of this writing (12/22/16), my current draft comes in over 500 lines of JavaS
 
 ## Update
 
-I found the problem with truncating string representations of floats. After poking around in the webpack build a little more, it turns out this wasn't the culprit at all. There is a function in the `test/utils.py` called `cleanse_javascript`. Part of this function looks for any string representation of a float, converts it to a float then back to a string again. Goodbye extra decimals! To fix this problem I changed this...
-
-{% highlight python %}
-
-for match in JS_FLOAT_DECIMAL.findall(out):
-    out = out.replace(match, str(float(match)))
-
-{% endhighlight %}
-
-...with this...
-{% highlight python %}
-
-for match in JS_FLOAT_DECIMAL.findall(out):
-    out = out.replace(match, str(Decimal(match)))
-
-{% endhighlight %}
+I found the problem with truncating string representations of floats. After poking around in the webpack build a little more, it turns out this wasn't the culprit at all. There is a function in the `test/utils.py` called `cleanse_javascript`. Part of this function looks for any string representation of a float, converts it to a float then back to a string again. Goodbye extra decimals! We'll need some kind of special handling to distinguish between strings and floats.
