@@ -11,7 +11,7 @@ categories:
 tags:
  - ruby
  - rails
- -factory_girl
+ - factory_girl
 
 ---
 
