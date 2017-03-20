@@ -6,11 +6,11 @@ permalink: qa-forum-setting-up
 ---
 Following up from my last post, here is a walk through on generating all of the required components for our Q&A forum.
 
-##Questions
+## Questions
 
 First, let's generate all of the stuff we need related to Q&A questions. This will include the controller, model, migration, views and modification of the routes file.
 
-###QuestionsController
+### QuestionsController
 
 The controller handles all of the incoming requests for the resource and renders the appropriate response. Just to get things started let's make our controller able to handle all actions in CRUD.
 
@@ -59,7 +59,7 @@ The controller handles all of the incoming requests for the resource and renders
 This action creates several new files for us:
 
 * The controller itself
-* routes for each action we requested 
+* routes for each action we requested
 * a new directory of views for the questions resource
 * test files for the questions resource
 * static assets to be used inside the resource (Coffescript and SCSS)
@@ -96,7 +96,7 @@ These actions won't do anything other than render their appropriate view, but it
 
 ##Routes
 
-Looking in `config/routes.rb` we see that new routes were created for us to reach each of these controller actions. 
+Looking in `config/routes.rb` we see that new routes were created for us to reach each of these controller actions.
 
     get 'questions/index'
 
@@ -142,7 +142,7 @@ Now we need to create the model which is an API for the corresponding database t
       invoke      factory_girl
       create        spec/factories/questions.rb
 
-Our model is created. There is a lot we can put in there, but the first thing should be to tell the model how it associates with other models. 
+Our model is created. There is a lot we can put in there, but the first thing should be to tell the model how it associates with other models.
 
     class Question < ActiveRecord::Base
       has_many :responses
@@ -152,7 +152,7 @@ Our model is created. There is a lot we can put in there, but the first thing sh
 
 The Question class now has three additional methods: `responses`, `user` and `exercise` which all grab the records you would expect. With all of this stuff using ActiveRecord we might not need to type SQL at all!
 
-#Migration 
+#Migration
 This provides a file we can add ruby code to which will add the actual database table. Let's do that now:
 
     class CreateQuestions < ActiveRecord::Migration
