@@ -137,7 +137,7 @@ In my Javascript...
 
 {% highlight javascript %}
 
-// in the view attach a variable to the `window` object:
+// in the view attach a variable to the window object:
 :javascript
     window.base_url = "#{ENV["BASE_URL"]}";
 
@@ -177,4 +177,4 @@ body{
 
 {% endhighlight %}
 
-And that's it! So much easier than having to change my development enviornment!
+And that's it! So much easier than having to change my development environment!
