@@ -21,7 +21,7 @@ There were however a few small issues that caused me a disproportionate level of
 It turns out that 256 Mb of memory isn't enough to install MySQL. You will likely get the error: `invoke-rc.d: initscript mysql, action "start" failed.
  dpkg: error processing package mysql-server-5.5 (--configure):`. To fix this, I increased memory allocation to 1Gb:
 
-{%highlight ruby %}
+{% highlight ruby %}
 
 config.vm.define :node do |node|
     # the droplet to provision
@@ -45,7 +45,7 @@ __note: part of the following section is a copy/paste of my own words originatin
 
 I am using passenger to serve my app, but letting nginx serve my precompiled assets. I spent a lot of time confused by how to make this work. Here is the config file I am using in `/etc/nginx/sites-enabled/default`
 
-{% highlight %}
+{% highlight nginx %}
 
     server {
         listen 80 default_server;
@@ -76,7 +76,7 @@ I am using passenger to serve my app, but letting nginx serve my precompiled ass
         location = /robots.txt { log_not_found off; access_log off; allow all; }
         location = .(css|gif|ico|jpeg|jpg|js|png)$" # don't include this line! see below!
 
-        location ~ ^/h20-initiative(/.*|$) {
+        location ~ ^/h20-initiative(/.\*|$) {
             alias /home/{{user_name}}/unify/current/public$1;
             passenger_base_uri /h20-initiative;
             passenger_app_root /home/{{user_name}}/current/unify;
@@ -103,7 +103,8 @@ I also ran into a strange problem where static assets in my rails app were not b
 
 Then I greped through the log. I searched for one of the assets that wasn't being served and found these lines:
 
-{% highlight %}
+{% highlight nginx %}
+
 2017/03/01 02:02:31 [debug] 28274#28274: *231 test location: "/"
 2017/03/01 02:02:31 [debug] 28274#28274: *231 test location: "robots.txt"
 2017/03/01 02:02:31 [debug] 28274#28274: *231 test location: "favicon.ico"
@@ -166,7 +167,7 @@ end
 In scss I can use an erb tag and `image_url` to reference an image I want for a
 background
 
-{% highlight %}
+{% highlight scss %}
 
 $bg-img: "<%= image_url 'cumberlands.jpg' %>";
 
