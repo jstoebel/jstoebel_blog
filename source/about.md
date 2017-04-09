@@ -29,6 +29,6 @@ My work with Mountain Tech Media has given me the valuable experience of working
 
 In my spare time, I hack on projects at [Freecodecamp](https://www.freecodecamp.com/jstoebel). Freecodecamp's curriculum is full stack Javascript (React, D3, Node, MongoDB, D3). For example, checkout [this poll app](https://github.com/jstoebel/voting) I made using React and MongoDB. Or this [image search microservice](https://github.com/jstoebel/image_search), using Node and MongoDB. Or [this heat map](http://codepen.io/jstoebel/full/amLRXa/) in D3.
 
-## Opensource contributions: Batavia
+## Open source Batavia
 
 Also in my spare time, I contribute to the open source project [Batavia](https://github.com/jstoebel/batavia) (part of the BeeWare project) which is a JavaScript implementation of the Python Virtual Machine. Python was the first language I learned, and I have been in love with it since my first `print('Hello world')`. BeeWare's aim to move Python to platforms including the browser, iOS, Android and everywhere else is incredibly inspiring to me. Furthermore, my work with a large open source project has given my the opportunity to learn and grow under the mentorship of many knowledgable, experienced developers.
