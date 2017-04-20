@@ -19,6 +19,7 @@ I specialize in:
 
 #### Example project
  - [EDS Dashboard](https://github.com/jstoebel/eds_dashboard)
+ - [Orphanage: A simple Active Record library for storing temporary orphan records](https://github.com/jstoebel/orphanage)
 
 I currently work for Berea College where I work with a small team to develop and manage an [Advisor Dashboard](https://github.com/jstoebel/eds_dashboard) for Education Studies. Berea's Education Studies department has a substantial regulatory obligation with both the state and federal government in terms of student performance. They need to keep a good deal of very complex data on logic on their students and faculty. When I began in this position, the department's "database" consisted of several unlinked spreadsheets and Access databases. It was clear the department need to graduate to something that could house all of our data in one place and  represent their very complex business logic. Finding all of the commercially available products not specific enough to suit our departments needs, I set out to create a product perfectly tailored to address our goals. I researched the options and ultimately decided on Ruby on Rails. Several frameworks like Django, Flask and Node had their appeal (and I could have been perfectly happy with them too), but I ultimately landed on Rails for its strong documentation and community support. Also, Rails is highly opinionated about how it should be designed (convention over customization). While experienced developers might find this an impediment, I was a beginner when I started this project and found it an asset to be given a clear path on how to structure things. The project has provided me with a tremendous learning experience in building and maintaining software to address a real world problem.
 
@@ -38,6 +39,7 @@ My work with Mountain Tech Media has given me the valuable experience of working
 #### Example projects
 
  - [MERN stack voting app](https://github.com/jstoebel/voting)
+ - [React dungeon crawler game](https://github.com/jstoebel/dungeon_crawler)
  - [image search microservice](https://github.com/jstoebel/image_search)
  - [D3 heat map](http://codepen.io/jstoebel/full/amLRXa/)
 

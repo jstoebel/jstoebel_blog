@@ -81,7 +81,13 @@ The object takes a term to filter by and can run a query for the filter term.. I
       scope :by_term, ->(term) {where :SZVEDSD_FILTER_TERM => term}
 {% endhighlight %}
 
+Finally we need to:
+ - ensure the `database.yml` file in production is updated.
+ - that `Banner` is not included in the rails_admin initializer (`config/initializers/rails_admin.rb`)
+
 # Updates to tests
 
- - using `assigns` in controllers has been moved to its own gem: `rails-controller-testing`
- - positional arguments in functional tests aren't allowed in rails 5.1. Let's clean them up now:
+ - using `assigns` in controllers has been moved to its own gem: `rails-controller-testing`. Its also worth noting here that Rails 5 has [changed the way attributes from controllers are parsed](https://github.com/rails/rails-controller-testing/issues/33). This broke some of my tests.
+ - positional arguments in functional tests aren't allowed in rails 5.1. Instead they are passed as hash with key `params` We should clean them up now so the upgrade to 5.1 will be easier.
+ - similarly `assert_equal` shouldn't be used to assert something is `nil`. I had to refactor some tests in anticipation of this breaking change in minitest 6.
+ - Rails 5 is cracking down on blind params even more. Apparently tests fail when you try to use them. Glad they caught a few of them!
