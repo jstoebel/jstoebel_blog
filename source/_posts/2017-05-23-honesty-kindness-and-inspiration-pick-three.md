@@ -18,7 +18,7 @@ Folks, we need to talk about a tweet:
 
 As far as I can tell, this seems to be the attitude among many developers: I can either 1) give you feedback that is touchy feely and makes you feel good but is useless or 2) We can get some **real** work done but I will make you feel like garbage. The Tweet received several objections from people wondering aloud why feedback can't be both honest **and** kind.
 
-In a past life, I was a high school drama teacher. Balancing critical feedback with kindness was something always at the forefront of my mind. One common approach was the so-called "Shit Sandwich", (and no, I never called it this on the job), where you pad negative feedback in between positive feedback. An over simplified summary of how it works would be something like this: "I really liked how you did ________, but that part where you did _________, was not so good. You should do _________ instead. ...But on the whole it was great!"
+In a past life, I was a high school drama teacher. Balancing critical feedback with kindness was something always at the forefront of my mind. One common approach was the so-called "Shit Sandwich", (and no, I never called it this on the job), where you pad negative feedback in between positive feedback. An over simplified summary of how it works would be something like this: "I really liked how you did X, but that part where you did Y, was not so good. You should do Z instead. ...But on the whole it was great!"
 
 This felt a little better to me, because it helped manage the sometimes delicate feelings of teenagers. The problem was that the receiver of the feedback sometimes thought of it like a report card: "I got two good grades and one bad one. On the whole I've got a decent GPA." The creator thought of the good spots as as uniformly good, not needing change and the bad spots as unfixable, impossible to get any better at. **Shouldn't the whole point of feedback be to inspire the creator(s) to go back to their work with fresh eyes, excited about making their creation even better?**
 
@@ -56,7 +56,7 @@ A bad example to the same question above:
 
 -   A: No, and in general the documentation was hard to follow and not so well organized. The way you should organize it is...
 
-In the second example, the responder's comments were out of scope of what the creator asked about. Here the responders should answer the questions and nothing more. Opinions come at the end.
+In the second example, the responder's comments were out of scope of what the creator asked about. Here the responders should answer the questions and nothing more. Responder initiated opinions come at the end.
 
 #### Step 3: Neutral Questions from the Responders
 
