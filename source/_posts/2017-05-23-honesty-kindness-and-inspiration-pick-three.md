@@ -87,3 +87,9 @@ Creator(s): No thanks!
 I realize that the idea of express consent before all opinions might not work in all situations. In a traditional corporate structure, a team doesn't get to just say "no thanks" to their manager's opinion. Here, consent for opinions (so long as they are thoughtful and well timed) is implied by the relationship. The manager can simply give her opinions at this point without needing to ask if they are allowed. The politics of this are entirely dependent on your organizational culture. You'll need to figure out what's right for your team.
 
 And that's pretty much it. Again, the idea is for the creator of the work to receive thoughtful, critical, **useful** feedback. Once the session is done, the creator(s) should feel inspired to go back and make their work even better.
+
+#### Update
+
+I gave a lightning talk based on this article:
+ - slides: [https://docs.google.com/presentation/d/1i5aF-HI9piEFLH3uOOrKoEobKxSQJ9XPTZx6nZ42wvQ/edit?usp=sharing](https://docs.google.com/presentation/d/1i5aF-HI9piEFLH3uOOrKoEobKxSQJ9XPTZx6nZ42wvQ/edit?usp=sharing)
+ - Video: coming soon.
