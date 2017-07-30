@@ -22,9 +22,9 @@ In a past life, I was a high school drama teacher. Balancing critical feedback w
 
 This felt a little better to me, because it helped manage the sometimes delicate feelings of teenagers. The problem was that the receiver of the feedback sometimes thought of it like a report card: "I got two good grades and one bad one. On the whole I've got a decent GPA." The creator thought of the good spots as as uniformly good, not needing change and the bad spots as unfixable, impossible to get any better at. **Shouldn't the whole point of feedback be to inspire the creator(s) to go back to their work with fresh eyes, excited about making their creation even better?**
 
-### Liz Lermon Critical Response Process
+### Liz Lerman Critical Response Process
 
-Liz Lermon a dancer, choreographer and founder of the Liz Lermon Dance Exchange developed a framework for feedback called the [Critical Response Process](http://danceexchange.org/projects/critical-response-process/). It has been used by artists, administrators, scientists, academics, and even in the corporate sector. It isn't constrained to works that we would traditionally call "Art". Really, its for anything creative. Software is a perfect use case for this! Here's how it works. The creator(s) sit down with a group of responders. The goal is for the creators to see a way forward for improvement. One person acts as the facilitator. The feedback process follows four steps:
+Liz Lerman a dancer, choreographer and founder of the Liz Lerman Dance Exchange developed a framework for feedback called the [Critical Response Process](http://danceexchange.org/projects/critical-response-process/). It has been used by artists, administrators, scientists, academics, and even in the corporate sector. It isn't constrained to works that we would traditionally call "Art". Really, its for anything creative. Software is a perfect use case for this! Here's how it works. The creator(s) sit down with a group of responders. The goal is for the creators to see a way forward for improvement. One person acts as the facilitator. The feedback process follows four steps:
 
 #### Step 1: Statements of Meaning
 
