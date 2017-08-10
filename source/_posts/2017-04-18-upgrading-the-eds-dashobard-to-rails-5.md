@@ -16,7 +16,7 @@ Rails has dropped active support for Rails 4.2 which means its time to bite the 
 
 # Dependency tidying
 
-As expected a one top level dependency (`sass-rails`) was on old versions and not allowing `active_record == 5.0.0`. Fortunately it is well supported and has a Rails 5 version. Easy. In this process we also identified a few dependencies we aren't using anywhere. Goodbye to `seed_dump`, `composite_primary_keys`, `active_record-acts_as`
+As expected, one top level dependency (`sass-rails`) was on old version and not allowing `active_record == 5.0.0`. Fortunately it is well supported and has a Rails 5 version. Easy. In this process we also identified a few dependencies we aren't using anywhere. Goodbye to `seed_dump`, `composite_primary_keys`, `active_record-acts_as`
 
 # `rails app:update`
 
