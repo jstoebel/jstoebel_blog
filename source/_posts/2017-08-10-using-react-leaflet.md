@@ -26,19 +26,23 @@ For my new [nightlife app](https://github.com/jstoebel/nightlife) I am using [`l
 
 Neato! There are a few gotchas with `react-leaflet` though. At its core, `leaflet` is not using React, and instead manipulates the DOM on its own. This creates some interesting, unexpected results. For example when a popup is rendered, its doesn't go where you expect it to go in the virtual DOM:
 
-```
+{% highlight jsx%}
 <BrowserRouter></BrowserRouter>
 <div>
     <h5> Burgers and Brew </h5>
     </rsvpButton>
 </div>
-```
+{% endhighlight %}
 
-Doh! This means that the popup is completly outside the of the context and thus doesn't have access to the redux store. If you were hoping to `mapStateToProps` like normal, you're out of luck. Instead we have to pass props in the old fashioned way:
+Doh! This means that the popup is completely outside the of the context and thus doesn't have access to the redux store. If you were hoping to `mapStateToProps` like normal, you're out of luck. Instead we have to pass props in the old fashioned way:
 
-```
-// Map.jsx
-// map component. This function shows representation of a single bar which contains a marker with popup. Since passing in state won't work, we just pass the props in directly. 
+{% highlight jsx %}
+/* 
+  Map.jsx
+  map component. This function shows representation of a single bar which 
+  contains a marker with popup. Since passing in state won't work, we just
+  pass the props in directly. 
+*/
 
 _eachBar(bar, idx) {
   // render a single bar on the map
@@ -64,6 +68,6 @@ _eachBar(bar, idx) {
     </Marker>
   )
 } 
-```
+{% endhighlight %}
 
 I've only begun to scratch the surface with what leaflet can do. Its not implemented with React so at its core you need to be a little flexible with your style, but in the end I think its worth working with.
