@@ -17,7 +17,7 @@ I specialize in:
 
 ## Berea College Advisor Dashboard
 
-#### Example project
+#### Example projects
  - [EDS Dashboard](https://github.com/jstoebel/eds_dashboard)
  - [Orphanage: A simple Active Record library for storing temporary orphan records](https://github.com/jstoebel/orphanage)
 
