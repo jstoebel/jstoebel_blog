@@ -1,3 +1,3 @@
  - componentizing d3 to work in react
  - simple mock objects for testing in rails/minitest
- - 
+ - tesing git 
