@@ -5,7 +5,7 @@ permalink: /about/
 slug: about
 ---
 
-I am a software developer living in Berea, KY. I spend my days writing web applications (Ruby, JavaScript, Python), working with data, and leveling up as a software engineer. I work and study at Berea College. This is my blog.
+I am a software developer living in Berea, KY. I spend my days writing web applications in Ruby on Rails, JavaScript/Typescript and React, working with data, and leveling up as a software engineer. This is my blog.
 
 I specialize in:
 
